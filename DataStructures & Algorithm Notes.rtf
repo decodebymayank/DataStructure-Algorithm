@@ -6825,7 +6825,37 @@ values passed in datastructures will passed by refrence (optional)\par
 {\pntext\f2\'B7\tab}Search element through loop using index\par
 
 \pard\sa200\sl276\slmult1\b 2-Pointer Approach :- \b0\line In which we use while loop and two variables , one will start from start and another one from end\par
-When size of array is odd , then only need to add ( = ) in while loop otherwise not required\b  \b0\par
+When size of array is odd , then only need to add ( = ) in while loop otherwise not required\b  \par
+Lecture - 09 ( Vectors in C++) :- \b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Same as like array , only the difference is vectors are dynamic in nature\par
+{\pntext\f2\'B7\tab}STL ( Standard Template Library ) in which implementation of some datastructure is already written , only we need to use it in our code\par
+{\pntext\f2\'B7\tab}All of these known as containers which is present inside this STL to store some kind of data.\par
+
+\pard\sa200\sl276\slmult1\b Vector Syntax :- \b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 vector<data_type> vector_name ;\par
+{\pntext\f2\'B7\tab}vector<data_type> vector_name = \{elements\};\par
+{\pntext\f2\'B7\tab}vector<data_type> vector_name(no_of_elements , element present at particular index)\par
+{\pntext\f2\'B7\tab}To use vector we need to include vector header file\par
+
+\pard\sa200\sl276\slmult1 for(int i : vect_name)\par
+\{\par
+\tab cout << i << " " ; - i will print values which is present in vector\par
+\}\par
+\b Vector Functions :- \b0 With the help of which we perform some operations on vector\par
+\b pop_back :-\b0  it remove last element from a vector\par
+\b front() :-\b0  It prints starting element \par
+\b back() :- \b0 Its prints last elemeny\par
+\b at(index) :-\b0  Element which is present at that index\par
+\par
+\b Static Vs Dynamic Memory Allocation :- \b0\par
+\b Static Memory :- \b0 Which allocates during compile time ( Stack )\par
+\b Dynamic Memory :- \b0 Which allocates during run time ( Dynamic )\par
+In dynamic , once size of another vector created , first one's automatically deleted and always its created twice size of pervious one .\par
+\b Size :- \b0 Means no of elements stored \par
+\b Capacity :- \b0 Means how much it can stores\par
+\b & :-\b0  Using in a vector for pass by refrence\b\line\b0\par
 
 \pard\sa200\sl276\slmult1\par
 \line\par
