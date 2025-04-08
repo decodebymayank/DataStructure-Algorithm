@@ -40,6 +40,7 @@ int main()
     cout << "After using Pointer : " << x << endl;
 
     int y = 90 ;
+    // Most of the we used in this way
     passed_by_refrence_alias(y) ;
     cout << "After using Reference Or Creating alias : " << x << endl;
 
