@@ -3,6 +3,11 @@
 #include<list>
 #include<deque>
 #include<stack>
+#include<queue>
+#include<map>
+#include<unordered_map>
+#include<set>
+#include<algorithm>
 
 using namespace std;
 
@@ -57,4 +62,47 @@ int main()
     stack<int> s2;
     s2.swap(s) ;
 
+    //Queue
+    queue<int> q ;
+    q.push(100);
+    q.push(1120);
+    q.pop();
+
+    //Priroty_Queue
+    priority_queue<int> pq ;
+    //For Increasing order
+    //greater<int> :- Functor which we pass to perform some work and its a object or it can be comparator
+    priority_queue<int , vector<int> , greater<int>> p;
+    pq.push(21);
+    pq.pop();
+    pq.top();
+
+    //Map :- If we are trying to print multiple data in map , then it will print data lexicographically
+    // By default it sort our data
+    map<string , int>  mp ;
+    mp["key1"] = 21 ;
+    mp["key2"] = 21 ;
+    cout << mp["key1"] << endl;
+    mp.insert({"key4",823});
+
+    //In map and unordered map during printing data it will not print duplicate values 
+
+    multimap<string , int> mtp ;
+    mtp.emplace("mt1",2);
+    
+    //Unordered map :- It stores data in random order
+    unordered_map<string , int> unm;
+    unm.insert({"kuchbhi",10});
+
+    set<int> st ;
+    st.insert(100);
+    st.insert(120);
+    st.insert(1120);
+    st.insert(90);
+
+    //Sort function
+    sort(v.begin(),v.end());
+    
+    //reverse function
+    reverse(v.begin(),v.end());
 }
